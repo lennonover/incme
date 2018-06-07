@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Menu extends React.Component {
     constructor(props) {
@@ -10,13 +10,11 @@ class Menu extends React.Component {
         /** 做点什么*/
     }
     render(){
-        let {menusDates}=this.props;
-        let num = 0;
         return (
             <ul>
-                {menusDates.map(item => (
-                <li key={num++}>{item}</li>
-                ))}
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/roster'>Roster</Link></li>
+                <li><Link to='/schedule'>Schedule</Link></li>
             </ul>
         )
     }

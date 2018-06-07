@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './compontents/menu';
+import Main from './compontents/main';
 import Content from './compontents/content';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -22,7 +23,8 @@ class App extends Component {
   render() {
     
     return [
-      <Menu  menusDates ={this.props.menusDates}/>,
+      <Menu />,
+      <Main />,
       <Content status = {this.props.status} nextAction={this.props.actions}></Content>
     ];
   }
@@ -30,7 +32,6 @@ class App extends Component {
 
 
 const mapStateToProps = state => ({
-  menusDates: state.toggleReducer.menusDates,
   status: state.toggleReducer
 });
 
