@@ -19,6 +19,8 @@ class App extends Component {
   componentDidMount () {
     let state = this.context.store.getState();
     this.setState({ status: state.toggleReducer })
+    
+    console.log(this.props.history)
   }
   render() {
     

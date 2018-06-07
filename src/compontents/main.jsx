@@ -7,9 +7,12 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
     }
-
+   
     componentDidMount() {
         /** 做点什么*/
+        window.addEventListener('hashchange', () => {
+            alert()
+        })
     }
     render(){
         return (

@@ -7,12 +7,14 @@ class Contents extends React.Component {
     }
 
     componentDidMount() {
-        /**做点什么 */
+        /** */
     }
     render(){
         let { status ,nextAction} = this.props;
+        console.log(this.props)
         return (
-            <img className="photo" title={status.imgs[status.now].tit} alt={status.imgs[status.now].tit} src={status.imgs[status.now].src} onClick={nextAction.toggleImg}/>      
+            <div>66</div>
+            //<img className="photo" title={status.imgs[status.now].tit} alt={status.imgs[status.now].tit} src={status.imgs[status.now].src} onClick={nextAction.toggleImg}/>      
         )
     }
 }

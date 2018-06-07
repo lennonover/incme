@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 const initialState = {
-    menusDates:["野","蛮","生","长"],
+    menusDates:["1","1蛮","2","3"],
     now:0,
     imgs:[
         {
