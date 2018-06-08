@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import Menu from './compontents/menu';
-import Main from './compontents/main';
-import Content from './compontents/content';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
 
-import actions from './action/action';
-import './App.css';
+import Content from './compontents/content'
+import Random from './compontents/random'
+
+import PropTypes from 'prop-types'
+import history from './history'
+import { HashRouter} from 'react-router-dom'
+import { Link,Switch, Route} from 'react-router-dom'
+
+import './App.css'
 
 class App extends Component {
   constructor(props) {
@@ -15,30 +16,37 @@ class App extends Component {
   }
   static contextTypes = {
       store: PropTypes.object,
+      router: PropTypes.shape({
+        history: PropTypes.object.isRequired,
+        route: PropTypes.object.isRequired,
+        staticContext: PropTypes.object
+      })
   }
   componentDidMount () {
-    let state = this.context.store.getState();
-    this.setState({ status: state.toggleReducer })
-    
-    console.log(this.props.history)
+    // console.log(this.props)
+    // console.log(this.context)
   }
   render() {
     
     return [
-      <Menu />,
-      <Main />,
-      <Content status = {this.props.status} nextAction={this.props.actions}></Content>
+      <HashRouter  history={history}>
+        <div>
+            <ul>
+                <li><Link to='/'>歪</Link></li>
+                <li><Link to='/random'>RANDOM</Link></li>
+               
+            </ul>
+            <main>
+                <Switch>
+                    <Route exact path='/' component={Content}/>
+                    <Route path='/random' component={Random}/>
+                </Switch>
+            </main>
+        </div>
+      </HashRouter>
     ];
   }
 }
 
 
-const mapStateToProps = state => ({
-  status: state.toggleReducer
-});
-
-const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(actions, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

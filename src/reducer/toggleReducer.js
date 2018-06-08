@@ -1,6 +1,5 @@
 import { fromJS } from 'immutable';
 const initialState = {
-    menusDates:["1","1蛮","2","3"],
     now:0,
     imgs:[
         {
@@ -11,13 +10,15 @@ const initialState = {
             src:"https://wx3.sinaimg.cn/mw690/68d79b82gy1fqi18624yvj21w61w6npd.jpg",
             tit:'九口33'
         }
-    ]
+    ],
+
+    logogif:true
+    
 }
 export default (state = initialState, action) => {
     switch (action.type) {
         case "TOGGLE_IMG":
-            // return fromJS(state).set('now', state.now++).toJS();
-            return Object.assign({}, state, {now: 1});
+            return fromJS(state).set('now', 1).toJS();
             break;
     
         default:

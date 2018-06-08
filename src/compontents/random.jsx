@@ -1,19 +1,16 @@
 import React from 'react'
 
-class Two extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+class Random extends React.Component {
+  
     componentDidMount() {
         /** 做点什么*/
     }
     render(){
         return (
             <ul>
-                5555555666666666666
+                55555556666666666668888888888888
             </ul>
         )
     }
 }
-export default Two;
+export default Random;

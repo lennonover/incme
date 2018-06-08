@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.wai-index-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+.wai-index-logo:after {
+  content: "";
+  display: inline-block;
+  width: 1000px;
+  height: 300px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(./images/logogif.gif) no-repeat;
+  background-size: 100% 100%;
+}
+.hide {
+  display: none;
+}
