@@ -126,6 +126,14 @@ button[disabled],
 html input[disabled] {
     cursor: default;
 }
+.clearfix:before,.clearfix:after{ 
+  content:""; 
+  display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+  *zoom:1;/*IE/7/6*/ 
+}
 
 a:link {
   color: #000000;
@@ -139,7 +147,78 @@ a:hover {
 a:active {
   color: #000000;
 }
-
+body {
+  overflow-x: hidden;
+}
+#root,.wai {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.index-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  height: 80%;
+}
+.index-photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wai-bd {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: 0;
+  left: 20%;
+}
+.is-list .wai-bd {
+    right: 5%;
+    bottom: 0;
+    left: 5%;
+}
+.wai .nav {
+  position: fixed;
+  bottom: 5%;
+  left: 20%;
+}
+.wai .nav li{
+  float: left;
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif;
+}
+.wai .nav li a {
+  color: #111111;
+  font-family: 'canela', serif;
+}
+.wai .nav .index {
+  margin-right: 20px;
+  font-size: 16px;
+}
+.wai .nav .list,.wai .nav .contact {
+  margin-top: 2px;
+}
+.index-bd {
+  padding-top: 40px;
+  margin: 0 2%;
+}
+.index-bd li{
+  float: left;
+  width: 20%;
+  height: 200px;
+  padding: 2% 2% 4% 2%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.index-bd li img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .wai-index-logo {
   position: absolute;
   top: 0;
@@ -147,6 +226,7 @@ a:active {
   left: 0;
   bottom: 0;
   background: #fff;
+  z-index: 9;
 }
 .wai-index-logo:after {
   content: "";
@@ -166,4 +246,24 @@ a:active {
   opacity: 0;
   pointer-events: none;
   transition: opacity 600ms cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+
+@media screen and (min-width: 1440px) {
+  .index-bd li{
+    width: 16%;
+  }
+  .index-bd {
+      margin: 0 4%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .index-bd li{
+    width: 12.5%;
+  }
+  .index-bd {
+      margin: 0 8%;
+  }
+  .wai .nav {
+      
+  }
 }
