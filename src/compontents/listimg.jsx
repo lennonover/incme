@@ -12,14 +12,14 @@ class ListImg extends React.Component {
         
     }
     render(){
-        let { status ,actions} = this.props;
+        let { status } = this.props;
         let imgs = status.imgs;
         return (
             <ul className="index-bd clearfix">
                 {
-                    imgs.map(function (item) {
+                    imgs.map((item,i) => {
                         return (
-                            <li className="index-img" key='0'>
+                            <li className="index-img" key={i}>
                                 <img src={item.src} alt={item.tit}/>
                             </li>
                         )})

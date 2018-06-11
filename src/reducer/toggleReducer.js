@@ -47,8 +47,6 @@ export default (state = initialState, action) => {
     switch (action.type) {
         case "TOGGLE_IMG":
             return fromJS(state).set('now', 1).toJS();
-            break;
-    
         default:
             return state;
     }

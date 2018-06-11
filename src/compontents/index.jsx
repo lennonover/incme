@@ -14,8 +14,8 @@ class Contents extends React.Component {
     render(){
         let { status ,actions} = this.props;
         return ([
-            <div className="index-photo">,
-            <img  title={status.imgs[status.now].tit} alt={status.imgs[status.now].tit} src={status.imgs[status.now].src} onClick={actions.toggleImg}/>    
+            <div className="index-photo" key="00">,
+            <img   title={status.imgs[status.now].tit} alt={status.imgs[status.now].tit} src={status.imgs[status.now].src} onClick={actions.toggleImg}/>    
             </div>
             ]  
         )

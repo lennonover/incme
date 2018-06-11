@@ -7,9 +7,7 @@ class Random extends React.Component {
     }
     render(){
         return (
-            <ul>
-                55555556666666666668888888888888
-            </ul>
+            55555556666666666668888888888888
         )
     }
 }
