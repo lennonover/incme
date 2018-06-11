@@ -222,6 +222,19 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
+.wai-contact {
+  margin: 10% 20%;
+}
+.wai-contact .lato {
+  color: #111111;
+  font-family: 'Lato', sans-serif;
+}
+.wai-contact .base {
+  font-size: 16px;
+}
+.wai-contact .sina {
+  margin-top: 40px;
+}
 .wai-index-logo {
   position: absolute;
   top: 0;

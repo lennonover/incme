@@ -1,14 +1,20 @@
 import React from 'react'
 
-class Random extends React.Component {
+class Contact extends React.Component {
   
     componentDidMount() {
         /** 做点什么*/
     }
     render(){
         return (
-            55555556666666666668888888888888
+            <div className="wai-contact"> 
+                <p className="base" key="00">lennonover</p>
+                <p className="base" key="01">is a china based photographe or programmer</p>
+
+                <p className="lato sina" key="02">sina @lennonover</p>
+                <p className="lato email" key="04">lennonover@gmail.com</p>
+            </div>
         )
     }
 }
-export default Random;
+export default Contact;
