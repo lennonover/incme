@@ -37,6 +37,174 @@ const initialState = {
         {
             src:"http://img.cnu.cc/uploads/images/920/1805/24/08294f69724739f585655ca2abc1f102.jpg",
             tit:'9'
+        },
+        {
+            src:"../images/yy/yy (1).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (2).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (3).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (4).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (5).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (6).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (7).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (8).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (9).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (10).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (11).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (12).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (13).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/yy (14).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/IMG_2342.jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/yy/IMG_2347.jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (1).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (2).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (3).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (4).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (5).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (6).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (7).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (8).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (9).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (10).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (11).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (12).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (13).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (14).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (15).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (16).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (17).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (18).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (19).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (20).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (21).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (22).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (23).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (24).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (25).jpg",
+            tit:"yy"
+        },
+        {
+            src:"../images/zz/zz (26).jpg",
+            tit:"yy"
         }
     ],
 
@@ -47,7 +215,7 @@ export default (state = initialState, action) => {
     switch (action.type) {
         case "TOGGLE_IMG":
             // 0 - 8  的随机数
-            return fromJS(state).set('now', Math.floor(Math.random() * (8-0+1) + 0)).toJS();
+            return fromJS(state).set('now', Math.floor(Math.random() * (50-0+1) + 0)).toJS();
         default:
             return state;
     }
