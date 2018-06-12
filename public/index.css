@@ -199,11 +199,11 @@ body {
   color: #111111;
   font-family: 'canela', serif;
 }
-.wai .nav .index {
+.wai .nav .home {
   margin-right: 20px;
   font-size: 16px;
 }
-.wai .nav .list,.wai .nav .contact {
+.wai .nav .index,.wai .nav .contact {
   margin-top: 2px;
 }
 .index-bd {
@@ -212,8 +212,8 @@ body {
 }
 .index-bd li{
   float: left;
-  width: 20%;
-  height: 200px;
+  width: 33.33%;
+  height: 140px;
   padding: 2% 2% 4% 2%;
   box-sizing: border-box;
   text-align: center;
@@ -247,15 +247,15 @@ body {
 .wai-index-logo:after {
   content: "";
   display: inline-block;
-  width: 1000px;
-  height: 300px;
+  width: 260px;
+  height: 78px;
   margin: auto;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: url(./images/logogif.gif) no-repeat;
+  background: url(./images/logogif_260.gif) no-repeat;
   background-size: 100% 100%;
 }
 .hide {
@@ -263,18 +263,49 @@ body {
   pointer-events: none;
   transition: opacity 600ms cubic-bezier(0.08, 0.82, 0.17, 1);
 }
-
+@media screen and (min-width: 375px) {
+  .index-bd li {
+    width: 33.33%;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .index-bd li {
+    width: 25%;
+    height: 200px;
+  }
+  .wai-index-logo:after {
+    width: 600px;
+    height:179px;
+    background: url(./images/logogif_600.gif) no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .index-bd li {
+    width: 25%;
+    height: 220px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .index-bd li{
-    width: 16%;
+    width: 12.5%;
+    height: 240px;
   }
   .index-bd {
       margin: 0 4%;
   }
+  .wai-index-logo:after {
+    width: 1000px;
+    height:298px;
+    background: url(./images/logogif_1000.gif) no-repeat;
+    background-size: 100% 100%;
+  }
 }
 @media screen and (min-width: 1920px) {
   .index-bd li{
-    width: 12.5%;
+    width: 10%;
+    height: 240px;
   }
   .index-bd {
       margin: 0 8%;
@@ -282,4 +313,5 @@ body {
   .wai .nav {
       
   }
+  
 }

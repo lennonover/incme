@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux'
 import actions from '../action/action'
 
 
-class Contents extends React.Component {
+class HomePage extends React.Component {
     
     componentDidMount() {
         /** */
@@ -13,9 +13,11 @@ class Contents extends React.Component {
     }
     render(){
         let { status ,actions} = this.props;
+        let show_index = status.now;
+        let array_imgs = status.imgs;
         return ([
-            <div className="index-photo" key="00">,
-            <img   title={status.imgs[status.now].tit} alt={status.imgs[status.now].tit} src={status.imgs[status.now].src} onClick={actions.toggleImg}/>    
+            <div className="index-photo" key="00" onClick={actions.toggleImg}>,
+            <img title={array_imgs[show_index].tit} alt={array_imgs[show_index].tit} src={array_imgs[show_index].src} />    
             </div>
             ]  
         )
@@ -30,4 +32,4 @@ const mapStateToProps = state => ({
     actions: bindActionCreators(actions, dispatch)
   });
   
-  export default connect(mapStateToProps, mapDispatchToProps)(Contents);
+  export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux'
 import actions from '../action/action'
 
 
-class ListImg extends React.Component {
+class IndexPage extends React.Component {
     
     componentDidMount() {
         /** */
@@ -37,4 +37,4 @@ const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(actions, dispatch)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListImg);
+export default connect(mapStateToProps, mapDispatchToProps)(IndexPage);

@@ -46,7 +46,8 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case "TOGGLE_IMG":
-            return fromJS(state).set('now', 1).toJS();
+            // 0 - 8  的随机数
+            return fromJS(state).set('now', Math.floor(Math.random() * (8-0+1) + 0)).toJS();
         default:
             return state;
     }

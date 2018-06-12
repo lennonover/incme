@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import Index from './compontents/index'
+import HomePage from './compontents/homepage'
 import Contact from './compontents/contact'
-import ListImg from './compontents/listimg'
+import IndexPage from './compontents/indexpage'
 
 import PropTypes from 'prop-types'
 import { HashRouter} from 'react-router-dom'
@@ -39,13 +39,13 @@ class App extends Component {
         <div className="wai">
           <div className={this.state.isHidelogin + " wai-index-logo"}></div>
           <ul className="nav clearfix"> 
-              <li  className="index" ><Link to='/'>LENNONOVER</Link></li>
-              <li  className="list" ><Link to='/list'>index</Link></li>
+              <li  className="home" ><Link to='/'>LENNONOVER</Link></li>
+              <li  className="index" ><Link to='/index'>index</Link></li>
               <li  className="contact" ><Link to='/contact'>contact</Link></li>
           </ul>
           <Switch>
-            <Route exact path='/' component={Index}/>
-            <Route exact path='/list' component={ListImg}/>
+            <Route exact path='/' exact component={HomePage}/>
+            <Route exact path='/index' component={IndexPage}/>
             <Route path='/contact' component={Contact}/>
           </Switch>
         </div>
