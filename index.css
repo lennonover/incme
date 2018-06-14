@@ -30,13 +30,12 @@ body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input
 	padding:0;
 }
 
-/**
- * Helvetica Neue 最新版本Mac用户的最佳体
- * Arial Win 下默认英文字体及 Mac 的替代英文字体
- * 中文字体方面首选了平方
- */
+
 body{
-    font:  14px/1.5 "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
+  font-family: 'canela', serif;
+  font-weight: normal;
+  letter-spacing: 1pt;
+  color: #454545;
 }
 
 /**
@@ -230,9 +229,16 @@ body {
 .wai-contact .lato {
   color: #111111;
   font-family: 'Lato', sans-serif;
+  font-size: 8pt;
+  line-height: 12pt;
+  letter-spacing: 1.3pt;
 }
 .wai-contact .base {
   font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1pt;
+  color: #454545;
+  font-family: 'canela', serif;
 }
 .wai-contact .sina {
   margin-top: 40px;
