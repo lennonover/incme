@@ -134,18 +134,9 @@ html input[disabled] {
   *zoom:1;/*IE/7/6*/ 
 }
 
-a:link {
+a:link,a:active,a:hover,a:visited {
   color: #000000;
 } 
-a:visited {
-  color: #000000;
-}	
-a:hover {
-  color: #000000;
-}
-a:active {
-  color: #000000;
-}
 body {
   overflow-x: hidden;
 }
@@ -311,7 +302,7 @@ body {
   content: "";
   display: inline-block;
   width: 260px;
-  height: 78px;
+  height: 46px;
   margin: auto;
   position: absolute;
   top: 0;
