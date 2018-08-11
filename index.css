@@ -185,12 +185,14 @@ body {
     right: 5%;
     bottom: 0;
     left: 5%;
-    z-index: 9;
 }
 .wai .nav {
   position: fixed;
   bottom: 5%;
   left: 20%;
+  z-index: 9;
+  background: #fff;
+  padding: 0 0 0 10px;
 }
 .wai .nav li{
   float: left;
@@ -221,11 +223,15 @@ body {
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
+  background: #fff;
+  transition: background .4s;
+}
+.index-bd li:hover {
+  transition: background .3s linear .5s;
+  background: #000;
 }
 .index-bd li .bar{
   position: absolute;
-}
-.index-bd li:hover .bar{
   background: #000;
 }
 .index-bd li .t{
@@ -299,7 +305,7 @@ body {
   left: 0;
   bottom: 0;
   background: #fff;
-  z-index: 9;
+  z-index: 10;
 }
 .wai-index-logo:after {
   content: "";
