@@ -30,12 +30,13 @@ body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input
 	padding:0;
 }
 
-
+/**
+ * Helvetica Neue 最新版本Mac用户的最佳体
+ * Arial Win 下默认英文字体及 Mac 的替代英文字体
+ * 中文字体方面首选了平方
+ */
 body{
-  font-family: 'canela', serif;
-  font-weight: normal;
-  letter-spacing: 1pt;
-  color: #454545;
+    font:  14px/1.5 "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif;
 }
 
 /**
@@ -134,9 +135,18 @@ html input[disabled] {
   *zoom:1;/*IE/7/6*/ 
 }
 
-a:link,a:active,a:hover,a:visited {
+a:link {
   color: #000000;
 } 
+a:visited {
+  color: #000000;
+}	
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #000000;
+}
 body {
   overflow-x: hidden;
 }
@@ -181,9 +191,6 @@ body {
   position: fixed;
   bottom: 5%;
   left: 20%;
-  z-index: 9;
-  background: #fff;
-  padding: 0 0 0 10px;
 }
 .wai .nav li{
   float: left;
@@ -202,68 +209,16 @@ body {
   margin-top: 2px;
 }
 .index-bd {
-  padding: 40px 0;
+  padding-top: 40px;
   margin: 0 2%;
 }
 .index-bd li{
-  position: relative;
   float: left;
   width: 33.33%;
   height: 140px;
   padding: 2% 2% 4% 2%;
   box-sizing: border-box;
   text-align: center;
-  overflow: hidden;
-  background: #fff;
-  transition: background .4s;
-}
-.index-bd li:hover {
-  transition: background .3s linear .5s;
-  background: #000;
-}
-.index-bd li .bar{
-  position: absolute;
-  background: #000;
-}
-.index-bd li .t{
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 1px;
-  transition: right 1s;
-}
-.index-bd li:hover .t{
-  right: 0;
-}
-.index-bd li .r{
-  bottom: 100%;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  transition: bottom 1s;
-}
-.index-bd li:hover .r{
-  bottom: 0;
-}
-.index-bd li .b{
-  bottom: 0;
-  left: 100%;
-  width: 100%;
-  height: 1px;
-  transition: left 1s;
-}
-.index-bd li:hover .b{
-  left: 0;
-}
-.index-bd li .l{
-  top: 100%;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  transition: top 1s;
-}
-.index-bd li:hover .l{
-  top: 0;
 }
 .index-bd li img {
   max-width: 100%;
@@ -275,16 +230,9 @@ body {
 .wai-contact .lato {
   color: #111111;
   font-family: 'Lato', sans-serif;
-  font-size: 8pt;
-  line-height: 12pt;
-  letter-spacing: 1.3pt;
 }
 .wai-contact .base {
   font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 1pt;
-  color: #454545;
-  font-family: 'canela', serif;
 }
 .wai-contact .sina {
   margin-top: 40px;
@@ -296,13 +244,13 @@ body {
   left: 0;
   bottom: 0;
   background: #fff;
-  z-index: 10;
+  z-index: 9;
 }
 .wai-index-logo:after {
   content: "";
   display: inline-block;
   width: 260px;
-  height: 46px;
+  height: 78px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -360,7 +308,6 @@ body {
   .index-bd li{
     width: 10%;
     height: 240px;
-    line-height: 200px;
   }
   .index-bd {
       margin: 0 8%;
